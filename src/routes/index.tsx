@@ -72,25 +72,15 @@ function SalesPage() {
         <div className="reading-col">
           <span className="label">For engaged couples &amp; newlyweds</span>
 
-          <h1 style={{ marginBottom: "28px" }}>
-            You got married.<br />
-            But nobody taught you<br />
-            how to talk about sex.
+          <h1 style={{ marginBottom: "28px", fontSize: "clamp(1.9rem, 4.5vw, 3rem)", lineHeight: 1.15 }}>
+            You got married. But nobody taught you how to talk about sex.
           </h1>
 
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "16px" }}>
+          <p style={{ fontSize: "1.1rem", lineHeight: 1.75, marginBottom: "16px" }}>
             Not your parents. Not your friends. Not the pastor or counsellor.
           </p>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "16px" }}>
-            And now you're supposed to just… figure it out together.
-          </p>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
-            <strong>Most couples do. But "figuring it out" takes longer than it should — and costs more than it needs to.</strong>
-          </p>
-
-          <Cta label="Get After I Do — ₦3,700" />
-          <p style={{ marginTop: "12px", fontSize: "0.82rem", color: "var(--muted-foreground)" }}>
-            Instant digital access · Secure checkout via Selar
+          <p style={{ fontSize: "1.1rem", lineHeight: 1.75, marginBottom: "0" }}>
+            <strong>Most couples figure it out eventually. But it takes longer than it should — and costs more than it needs to.</strong>
           </p>
         </div>
       </header>
