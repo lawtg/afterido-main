@@ -136,37 +136,30 @@ function SalesPage() {
       {/* ═══════════════════════════════════════════
           BOOK INTRODUCTION
           ═══════════════════════════════════════════ */}
-      <section className="book-intro">
-        <div className="reading-col book-intro__transition">
+      <section className="ed-section" style={{ background: "var(--secondary)", borderBottom: "1px solid var(--border)" }}>
+        <div className="reading-col">
           <SectionLabel text="Introducing" />
-          <h2 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)" }}>After "I Do"</h2>
-          <p style={{ fontSize: "1.1rem", fontWeight: 600 }}>
+          <h2 style={{ fontSize: "clamp(1.9rem, 4.5vw, 3rem)", marginBottom: "8px" }}>
+            After "I Do"
+          </h2>
+          <p style={{ fontSize: "1.05rem", fontWeight: 600, color: "var(--muted-foreground)", marginBottom: "32px" }}>
             Everything You Wish Someone Had Told You About Sex Before Your Wedding Night
           </p>
-        </div>
 
-        <div className="page-shell book-intro__grid">
-          <figure className="book-intro__cover">
-            <img
-              src="/mockup cover.png"
-              alt="After I Do — Everything You Wish Someone Had Told You About Sex Before Your Wedding Night"
-              width="600"
-              height="800"
-              fetchPriority="high"
-            />
-          </figure>
-
-          <div className="book-intro__copy">
-            <p>This is not a book telling you to "just relax" and hope everything works out.</p>
-            <p>It is a practical guide designed to help couples understand what comes after the wedding.</p>
-            <p>Because getting married does not automatically mean you know how to communicate about intimacy.</p>
-            <p>It does not automatically remove nervousness.</p>
-            <p>It does not automatically make two people comfortable with each other.</p>
-            <p>And it certainly does not mean your first night will look like what you saw in movies, heard from friends, or imagined in your head.</p>
-            <p style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.2rem", fontStyle: "italic", margin: "32px 0 0" }}>
-              You learn each other. And this book shows you how to begin.
-            </p>
-          </div>
+          <p>This is not a book telling you to "just relax" and hope everything works out.</p>
+          <p>It is a practical guide designed to help couples understand what comes after the wedding.</p>
+          <p>Because getting married does not automatically mean you know how to communicate about intimacy. It does not automatically remove nervousness. It does not automatically make two people comfortable with each other.</p>
+          <p>And it certainly does not mean your first night will look like what you saw in movies, heard from friends, or imagined in your head.</p>
+          <p style={{
+            fontFamily: "'Playfair Display', Georgia, serif",
+            fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
+            fontStyle: "italic",
+            borderLeft: "3px solid var(--primary)",
+            paddingLeft: "20px",
+            margin: "32px 0 0",
+          }}>
+            You learn each other. And this book shows you how to begin.
+          </p>
         </div>
       </section>
 
