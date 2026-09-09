@@ -691,7 +691,7 @@ function SalesPage() {
           ═══════════════════════════════════════════ */}
       <section className="closing-band">
         <div className="reading-col text-center">
-          <SectionLabel text="After "I Do"" />
+          <SectionLabel text="After &#8220;I Do&#8221;" />
           <h2 style={{ color: "var(--background)", fontSize: "clamp(1.5rem, 3.5vw, 2.4rem)" }}>
             Your wedding night is one night.<br />Your intimate life is a lifetime.
           </h2>
