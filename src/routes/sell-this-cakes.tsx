@@ -145,7 +145,7 @@ function SellThisCakes() {
             {/* LEFT — copy */}
             <div>
               <p className="stc-hero__kicker">The Sell This Series</p>
-              <h1 className="stc-hero__h1">Amazing Cakes. Not Enough Orders?</h1>
+              <h1 className="stc-hero__h1">Your Money Back If You Don't Start Getting Consistent Orders With This Method.</h1>
               <p className="stc-hero__sub">
                 A practical sales playbook for bakers who know how to make great cakes — but want to get better at turning attention, enquiries and conversations into actual orders.
               </p>
@@ -198,17 +198,17 @@ function SellThisCakes() {
           <div className="stc-food-section__img">
             <img
               className="main"
-              src="/sell-this-cakes-cover.png"
-              alt="Premium cakes you already know how to make"
+              src="/sell-this-cakes-bundle.png"
+              alt="The Complete Sell This: Cakes Business Bundle"
               width="960"
               height="540"
               loading="lazy"
-              style={{ objectPosition: "center 30%" }}
+              style={{ objectPosition: "center center" }}
             />
-            <span className="stc-food-section__overlay">Sell This: Cakes</span>
+            <span className="stc-food-section__overlay">The Complete Bundle</span>
           </div>
           <p className="stc-food-section__caption">
-            You can make cakes this beautiful. Now learn how to sell them.
+            Everything you need to start getting consistent cake orders.
           </p>
           <CtaButton label="Download Instantly —" />
           <p className="stc-trust" style={{ marginTop: "8px" }}>
@@ -257,12 +257,12 @@ function SellThisCakes() {
 
             <div className="stc-includes__img">
               <img
-                src="/sell-this-cakes-cover.png"
-                alt="Sell This: Cakes book"
+                src="/sell-this-cakes-baker.png"
+                alt="Baker holding Sell This: Cakes book"
                 width="480"
-                height="480"
+                height="600"
                 loading="lazy"
-                style={{ borderRadius: "8px", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}
+                style={{ borderRadius: "8px", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", objectFit: "cover" }}
               />
             </div>
 

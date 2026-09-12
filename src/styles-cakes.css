@@ -34,7 +34,7 @@
 
 /* ── SHELL ── */
 .stc-shell {
-  width: min(calc(100% - 32px), 960px);
+  width: min(calc(100% - 16px), 1100px);
   margin-inline: auto;
 }
 
@@ -468,6 +468,7 @@
 
 /* ── RESPONSIVE ── */
 @media (min-width: 640px) {
+  .stc-shell { width: min(calc(100% - 32px), 1100px); }
   .stc-hero__grid {
     grid-template-columns: 1fr 0.75fr;
     gap: 48px;
