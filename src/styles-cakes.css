@@ -142,7 +142,8 @@
   color: var(--stc-green);
   font-weight: 700;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 2px;
+  line-height: 1.5;
 }
 
 /* ── PRICING ── */
@@ -259,8 +260,7 @@
 
 .stc-food-section__img img.main {
   width: 100%;
-  max-height: 360px;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -318,9 +318,8 @@
 
 .stc-includes__img img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  object-fit: cover;
-  max-height: 320px;
 }
 
 .stc-try-note {
@@ -493,7 +492,7 @@
 
   .stc-cta-band__text { text-align: left; }
 
-  .stc-food-section__img img.main { max-height: 440px; }
+  .stc-food-section__img img.main { height: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {

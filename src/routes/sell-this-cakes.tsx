@@ -203,7 +203,6 @@ function SellThisCakes() {
               width="960"
               height="540"
               loading="lazy"
-              style={{ objectPosition: "center center" }}
             />
             <span className="stc-food-section__overlay">The Complete Bundle</span>
           </div>
@@ -226,28 +225,36 @@ function SellThisCakes() {
               <h2 className="stc-includes__h2">Your Instant Access Includes</h2>
               <ul className="stc-bullets">
                 <li>
-                  <strong>Sell This: Cakes — Main Book (Digital)</strong>
-                  <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "2px" }}>
-                    Download instantly and start selling today.
-                  </span>
+                  <div>
+                    <strong>Sell This: Cakes — Main Book (Digital)</strong>
+                    <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "3px", fontWeight: 400 }}>
+                      Download instantly and start selling today.
+                    </span>
+                  </div>
                 </li>
                 <li>
-                  <strong>The 7-Step SELL THIS System</strong>
-                  <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "2px" }}>
-                    Target. Attract. Discover. Present. Handle. Close. Multiply.
-                  </span>
+                  <div>
+                    <strong>The 7-Step SELL THIS System</strong>
+                    <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "3px", fontWeight: 400 }}>
+                      Target. Attract. Discover. Present. Handle. Close. Multiply.
+                    </span>
+                  </div>
                 </li>
                 <li>
-                  <strong>8 Practical Sales Tools</strong>
-                  <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "2px" }}>
-                    Buyer Map, Content System, Scripts, Objection Sheet, Follow-Up Sequence and more.
-                  </span>
+                  <div>
+                    <strong>8 Practical Sales Tools</strong>
+                    <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "3px", fontWeight: 400 }}>
+                      Buyer Map, Content System, Scripts, Objection Sheet, Follow-Up Sequence and more.
+                    </span>
+                  </div>
                 </li>
                 <li>
-                  <strong>7-Day Cake Sales Challenge</strong>
-                  <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "2px" }}>
-                    A simple action plan to put what you have learned into practice immediately.
-                  </span>
+                  <div>
+                    <strong>7-Day Cake Sales Challenge</strong>
+                    <span style={{ display: "block", fontSize: "0.88rem", color: "var(--stc-fg-mid)", marginTop: "3px", fontWeight: 400 }}>
+                      A simple action plan to put what you have learned into practice immediately.
+                    </span>
+                  </div>
                 </li>
               </ul>
 
@@ -262,7 +269,7 @@ function SellThisCakes() {
                 width="480"
                 height="600"
                 loading="lazy"
-                style={{ borderRadius: "8px", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", objectFit: "cover" }}
+                style={{ borderRadius: "8px", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", width: "100%", height: "auto" }}
               />
             </div>
 
