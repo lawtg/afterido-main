@@ -6,7 +6,7 @@
   NITRO_PRESET = "netlify"
   NODE_VERSION = "20"
 
-# Serve static assets directly, route everything else to the SSR function
+# Route all non-asset requests through the SSR function
 [[redirects]]
   from = "/assets/*"
   to = "/assets/:splat"
@@ -17,3 +17,9 @@
   to = "/.netlify/functions/server"
   status = 200
   force = true
+
+# Meta Pixel — injected at CDN level into every HTML page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
