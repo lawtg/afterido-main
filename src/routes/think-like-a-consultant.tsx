@@ -175,19 +175,23 @@ function ThinkLikeAConsultant() {
           <div className="tlc-hero__grid">
             <div>
               <p className="tlc-hero__eyebrow">A Practical Business Guide</p>
-              <h1 className="tlc-hero__h1">Think Like a Consultant</h1>
-              <p className="tlc-hero__sub-h">
-                You don't need a $500-an-hour consultant. You need the way a consultant thinks.
+              <h1 className="tlc-hero__h1">Stop Guessing Your Way Through Business Problems.</h1>
+              <p className="tlc-hero__desc">
+                Think Like a Consultant shows you how to break down complex business problems, find the root cause, and choose solutions based on clear thinking — not guesswork.
+              </p>
+              <p className="tlc-hero__desc" style={{ marginBottom: "4px" }}>
+                <strong style={{ color: "var(--tlc-fg)" }}>No MBA. No consulting background.</strong>
               </p>
               <p className="tlc-hero__desc">
-                For entrepreneurs, business owners and professionals who want to solve problems better, make smarter decisions and turn confusion into clarity.
+                Just practical tools for thinking through your business like a consultant.
               </p>
 
               <ul className="tlc-bullets">
-                <li>Identify the real problem — not just the symptoms</li>
-                <li>35 chapters. One repeatable way to think.</li>
-                <li>Practical frameworks in plain English — no MBA needed</li>
-                <li>Exercises you can apply to your own business</li>
+                <li>Identify the real problem instead of treating symptoms</li>
+                <li>Break complicated challenges into smaller, manageable parts</li>
+                <li>Ask better questions before making important decisions</li>
+                <li>Use practical frameworks — plain English, no theory for the sake of theory</li>
+                <li>Turn recommendations into clear action plans that actually get done</li>
               </ul>
 
               <div className="tlc-price-block">
@@ -225,15 +229,14 @@ function ThinkLikeAConsultant() {
       {/* ── PROBLEM SECTION ── */}
       <section className="tlc-section tlc-section--alt">
         <div className="tlc-reading">
-          <span className="tlc-eyebrow tlc-eyebrow--blue">The real problem</span>
-          <h2 className="tlc-h2">Your business problems are not going away. But the way you approach them can change.</h2>
-          <p className="tlc-body">When something goes wrong, most business owners react with the first solution that comes to mind:</p>
+          <span className="tlc-eyebrow tlc-eyebrow--blue">Sound familiar?</span>
+          <h2 className="tlc-h2">But what if you're solving the wrong problem?</h2>
 
           <div className="tlc-reactions">
             {[
-              { label: "Reaction", text: '"Sales are down. Let\'s run a promotion."' },
-              { label: "Reaction", text: '"This employee isn\'t performing. Let\'s fire them."' },
-              { label: "Reaction", text: '"Our website isn\'t working. Let\'s redesign it."' },
+              { label: "Sales are down", text: '"Let\'s run a promotion."' },
+              { label: "Employee underperforming", text: '"Let\'s fire them."' },
+              { label: "Website not converting", text: '"Let\'s redesign it."' },
             ].map((r, i) => (
               <div key={i} className="tlc-reaction">
                 <span className="tlc-reaction__label">{r.label}</span>
@@ -244,7 +247,7 @@ function ThinkLikeAConsultant() {
 
           <p className="tlc-body">These decisions may turn out to be right. But what if they are not?</p>
           <p className="tlc-body">A promotion will not necessarily fix a customer-retention problem. A new website will not automatically solve a sales-process problem. And replacing an employee will not necessarily fix a poorly defined role.</p>
-          <p className="tlc-body" style={{ fontWeight: 600, color: "var(--tlc-fg)" }}>
+          <p className="tlc-body" style={{ fontWeight: 600, color: "var(--tlc-fg)", borderLeft: "3px solid var(--tlc-blue)", paddingLeft: "16px" }}>
             The difference between guessing and diagnosing is the difference between reacting to a problem and understanding it.
           </p>
           <p className="tlc-body">Think Like a Consultant helps you develop the habit of understanding a problem before rushing to solve it.</p>
