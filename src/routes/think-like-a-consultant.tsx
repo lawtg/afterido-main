@@ -176,16 +176,17 @@ function ThinkLikeAConsultant() {
             <div>
               <h1 className="tlc-hero__h1">Stop Guessing Your Way Through Business Problems.</h1>
 
-              <div className="tlc-reactions" style={{ margin: "20px 0" }}>
+              <div style={{ margin: "20px 0", display: "flex", flexDirection: "column", gap: "6px" }}>
                 {[
                   { label: "Sales are down", text: '"Let\'s run a promotion."' },
                   { label: "Employee underperforming", text: '"Let\'s fire them."' },
                   { label: "Website not converting", text: '"Let\'s redesign it."' },
                 ].map((r, i) => (
-                  <div key={i} className="tlc-reaction">
-                    <span className="tlc-reaction__label">{r.label}</span>
-                    <span className="tlc-reaction__text">{r.text}</span>
-                  </div>
+                  <p key={i} style={{ margin: 0, fontSize: "0.95rem", color: "var(--tlc-fg)" }}>
+                    <strong style={{ color: "var(--tlc-blue)" }}>{r.label}</strong>
+                    {" → "}
+                    <em style={{ color: "var(--tlc-fg-mid)" }}>{r.text}</em>
+                  </p>
                 ))}
               </div>
 
