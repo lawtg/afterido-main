@@ -254,35 +254,134 @@ function ThinkLikeAConsultant() {
         </div>
       </section>
 
-      {/* ── 35 CHAPTERS / PARTS ── */}
+      {/* ── WHAT'S INSIDE ── */}
       <section className="tlc-section">
         <div className="tlc-shell">
-          <div style={{ maxWidth: "700px" }}>
-            <span className="tlc-eyebrow tlc-eyebrow--blue">What's inside</span>
-            <h2 className="tlc-h2">35 Chapters. One Repeatable Way to Think.</h2>
-            <p className="tlc-body" style={{ color: "var(--tlc-fg-mid)" }}>
-              A practical system that takes you from identifying a problem to understanding it, developing solutions and putting them into action.
-            </p>
+          <div style={{ maxWidth: "700px", marginBottom: "40px" }}>
+            <h2 className="tlc-h2">What's Inside Think Like a Consultant?</h2>
+            <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--tlc-fg)", margin: "8px 0 4px" }}>35 Chapters. One Repeatable Way to Think.</p>
+            <p className="tlc-body">This isn't a collection of business buzzwords.</p>
+            <p className="tlc-body">It is a practical system that takes you from identifying a problem to understanding it, developing solutions and putting those solutions into action.</p>
           </div>
 
-          <div className="tlc-parts">
-            {parts.map((p) => (
-              <div key={p.num} className="tlc-part">
-                <div className="tlc-part__header">
-                  <div className="tlc-part__num">{p.num}</div>
-                  <div>
-                    <p className="tlc-part__title">{p.title}</p>
-                    <p className="tlc-part__name">{p.name}</p>
-                  </div>
-                </div>
-                <div className="tlc-part__items">
-                  {p.items.map(item => (
-                    <span key={item} className="tlc-part__item">{item}</span>
-                  ))}
-                </div>
+          <div style={{ display: "grid", gap: "16px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}>
+
+            {/* Part 1 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 1</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Building the Consultant's Mindset</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn the foundation of structured problem-solving.</p>
               </div>
-            ))}
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["What Consultants Get Paid For", "The One Skill That Matters More Than Any Framework", "Breaking Problems Into Clear, Non-Overlapping Parts", "How to Frame a Problem Using SCQA", "The Simple 6-Step Process for Tackling Any Problem"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 2 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 2</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Understanding Your Business</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn how to examine your business, market and competitive environment.</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["SWOT Analysis", "PESTLE Analysis", "Competitive Forces", "Market Sizing", "Value Chain Analysis"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 3 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 3</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Finding the Real Problem</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Go beyond surface-level symptoms and discover what's actually driving the challenge.</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["KPI Trees", "Root Cause Analysis", "The Five Whys", "The 80/20 Rule", "Cost and Time Leak Analysis", "Process Mapping", "Systems Thinking"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 4 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 4</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Developing Better Solutions</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn how to move from identifying a problem to making a sound strategic choice.</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["Generating Multiple Solutions", "Strategic Choice Tools", "Prioritizing Competing Demands", "Risk Analysis", "Testing Ideas Before Committing Fully"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 5 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 5</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Making Better Business Decisions</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Examine the decisions that shape the future of your business.</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["Business Model Analysis", "Short-Term and Long-Term Planning", "Pricing", "Scaling Your Business"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 6 */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 6</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Turning Ideas Into Action</p>
+                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Because a good recommendation is useless if nobody implements it.</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["Leading Your Team Through Change", "Creating Action Plans", "Managing Projects", "Getting Stakeholders on Board", "Tracking Progress", "Continuous Improvement"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Part 7 — full width */}
+            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden", gridColumn: "1 / -1" }}>
+              <div style={{ background: "var(--tlc-bg-dark)", padding: "16px 20px" }}>
+                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 7</p>
+                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Putting Everything Together</p>
+              </div>
+              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["A Quick-Reference Checklist for Any New Problem", "Three Practical Problems Solved from Start to Finish", "When to Use the Full Process — and When a Shortcut Is Fine", "Common Mistakes Even Trained Consultants Make", "A Repeatable Way to Approach Whatever Comes Next"].map(item => (
+                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
+
+          <p className="tlc-body" style={{ marginTop: "28px", fontStyle: "italic", color: "var(--tlc-fg-mid)" }}>
+            Every chapter includes practical explanations, examples and exercises to help you apply what you're learning.
+          </p>
         </div>
       </section>
 
