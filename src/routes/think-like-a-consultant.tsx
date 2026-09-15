@@ -174,25 +174,33 @@ function ThinkLikeAConsultant() {
         <div className="tlc-shell">
           <div className="tlc-hero__grid">
             <div>
-              <p className="tlc-hero__eyebrow">A Practical Business Guide</p>
               <h1 className="tlc-hero__h1">Stop Guessing Your Way Through Business Problems.</h1>
+
+              <div className="tlc-reactions" style={{ margin: "20px 0" }}>
+                {[
+                  { label: "Sales are down", text: '"Let\'s run a promotion."' },
+                  { label: "Employee underperforming", text: '"Let\'s fire them."' },
+                  { label: "Website not converting", text: '"Let\'s redesign it."' },
+                ].map((r, i) => (
+                  <div key={i} className="tlc-reaction">
+                    <span className="tlc-reaction__label">{r.label}</span>
+                    <span className="tlc-reaction__text">{r.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="tlc-hero__desc" style={{ fontWeight: 600, color: "var(--tlc-fg)" }}>
+                But what if you're solving the wrong problem?
+              </p>
               <p className="tlc-hero__desc">
                 Think Like a Consultant shows you how to break down complex business problems, find the root cause, and choose solutions based on clear thinking — not guesswork.
               </p>
-              <p className="tlc-hero__desc" style={{ marginBottom: "4px" }}>
-                <strong style={{ color: "var(--tlc-fg)" }}>No MBA. No consulting background.</strong>
+              <p className="tlc-hero__desc">
+                No MBA. No consulting background.
               </p>
               <p className="tlc-hero__desc">
                 Just practical tools for thinking through your business like a consultant.
               </p>
-
-              <ul className="tlc-bullets">
-                <li>Identify the real problem instead of treating symptoms</li>
-                <li>Break complicated challenges into smaller, manageable parts</li>
-                <li>Ask better questions before making important decisions</li>
-                <li>Use practical frameworks — plain English, no theory for the sake of theory</li>
-                <li>Turn recommendations into clear action plans that actually get done</li>
-              </ul>
 
               <div className="tlc-price-block">
                 <div className="tlc-price-row">
