@@ -385,41 +385,17 @@ function ThinkLikeAConsultant() {
         </div>
       </section>
 
-      {/* ── FRAMEWORKS DARK BAND ── */}
-      <section className="tlc-section tlc-section--dark">
-        <div className="tlc-reading">
-          <span className="tlc-eyebrow">Practical frameworks</span>
-          <h2 className="tlc-h2 tlc-h2--white">The tools consultants use. Explained in plain English.</h2>
-          <p className="tlc-body tlc-body--light" style={{ marginBottom: "8px" }}>
-            No complicated business theory for the sake of theory. Every framework in this book comes with a plain-English explanation and an exercise you can apply immediately.
-          </p>
-          <div className="tlc-frameworks">
-            {["MECE", "SCQA", "SWOT", "PESTLE", "KPI Trees", "Five Whys", "80/20", "Value Chain", "Market Sizing", "Risk Analysis"].map(f => (
-              <div key={f} className="tlc-framework">{f}</div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHAT'S INCLUDED ── */}
+      {/* ── BUNDLE IMAGE ── */}
       <section className="tlc-section tlc-section--panel">
         <div className="tlc-shell">
-          <div style={{ maxWidth: "700px" }}>
-            <span className="tlc-eyebrow tlc-eyebrow--blue">Your purchase includes</span>
-            <h2 className="tlc-h2">Everything you need to start thinking differently about your business.</h2>
-          </div>
-          <div className="tlc-includes-grid">
-            {includes.map((inc, i) => (
-              <div key={i} className="tlc-include">
-                <div className="tlc-include__icon">{inc.icon}</div>
-                <div>
-                  <p className="tlc-include__name">{inc.name}</p>
-                  <p className="tlc-include__title">{inc.title}</p>
-                  <p className="tlc-include__desc">{inc.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <img
+            src="/think-like-a-consultant-bundle.png"
+            alt="Your Purchase Includes — Think Like a Consultant complete bundle"
+            width="1200"
+            height="675"
+            loading="lazy"
+            style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+          />
         </div>
       </section>
 
