@@ -235,31 +235,22 @@ function ThinkLikeAConsultant() {
         </div>
       </header>
 
-      {/* ── PROBLEM SECTION ── */}
+      {/* ── WHAT YOU'LL LEARN ── */}
       <section className="tlc-section tlc-section--alt">
         <div className="tlc-reading">
-          <span className="tlc-eyebrow tlc-eyebrow--blue">Sound familiar?</span>
-          <h2 className="tlc-h2">But what if you're solving the wrong problem?</h2>
-
-          <div className="tlc-reactions">
-            {[
-              { label: "Sales are down", text: '"Let\'s run a promotion."' },
-              { label: "Employee underperforming", text: '"Let\'s fire them."' },
-              { label: "Website not converting", text: '"Let\'s redesign it."' },
-            ].map((r, i) => (
-              <div key={i} className="tlc-reaction">
-                <span className="tlc-reaction__label">{r.label}</span>
-                <span className="tlc-reaction__text">{r.text}</span>
-              </div>
-            ))}
-          </div>
-
-          <p className="tlc-body">These decisions may turn out to be right. But what if they are not?</p>
-          <p className="tlc-body">A promotion will not necessarily fix a customer-retention problem. A new website will not automatically solve a sales-process problem. And replacing an employee will not necessarily fix a poorly defined role.</p>
-          <p className="tlc-body" style={{ fontWeight: 600, color: "var(--tlc-fg)", borderLeft: "3px solid var(--tlc-blue)", paddingLeft: "16px" }}>
-            The difference between guessing and diagnosing is the difference between reacting to a problem and understanding it.
+          <h2 className="tlc-h2">Inside this book, you will learn how to:</h2>
+          <ul className="tlc-bullets" style={{ marginTop: "20px" }}>
+            <li>Identify the real problem instead of treating symptoms.</li>
+            <li>Break complicated business challenges into smaller, manageable parts.</li>
+            <li>Ask better questions before making important decisions.</li>
+            <li>Use practical frameworks to understand your business and its environment.</li>
+            <li>Find the real causes behind problems using evidence and analysis.</li>
+            <li>Evaluate opportunities, compare options and test ideas before committing fully.</li>
+            <li>Turn recommendations into clear action plans that actually get done.</li>
+          </ul>
+          <p className="tlc-body" style={{ marginTop: "24px", borderTop: "1px solid var(--tlc-border)", paddingTop: "20px" }}>
+            No complicated business theory for the sake of theory. Just practical tools, plain-English explanations and exercises you can apply to your own business.
           </p>
-          <p className="tlc-body">Think Like a Consultant helps you develop the habit of understanding a problem before rushing to solve it.</p>
         </div>
       </section>
 
