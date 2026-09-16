@@ -216,6 +216,25 @@ function SellThisCakes() {
         </div>
       </section>
 
+      {/* ── TESTIMONIAL ── */}
+      <section style={{ padding: "40px 0", borderBottom: "1px solid var(--stc-border)", background: "var(--stc-bg-alt)" }}>
+        <div className="stc-shell">
+          <p style={{ textAlign: "center", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--stc-caramel)", marginBottom: "20px" }}>
+            What readers are saying
+          </p>
+          <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+            <img
+              src="/sell-this-cakes-testimonial.png"
+              alt="Customer review of Sell This: Cakes"
+              width="1024"
+              height="640"
+              loading="lazy"
+              style={{ width: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 8px 32px rgba(0,0,0,0.15)" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── WHAT'S INCLUDED ── */}
       <section className="stc-includes">
         <div className="stc-shell">
