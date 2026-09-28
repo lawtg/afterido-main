@@ -174,25 +174,8 @@ function ThinkLikeAConsultant() {
         <div className="tlc-shell">
           <div className="tlc-hero__grid">
             <div>
-              <h1 className="tlc-hero__h1">Stop Guessing Your Way Through Business Problems.</h1>
+              <h1 className="tlc-hero__h1">If you are serious about solving any business problem without the guesswork, you should read this book today.</h1>
 
-              <div style={{ margin: "20px 0", display: "flex", flexDirection: "column", gap: "6px" }}>
-                {[
-                  { label: "Sales are down", text: '"Let\'s run a promotion."' },
-                  { label: "Employee underperforming", text: '"Let\'s fire them."' },
-                  { label: "Website not converting", text: '"Let\'s redesign it."' },
-                ].map((r, i) => (
-                  <p key={i} style={{ margin: 0, fontSize: "0.95rem", color: "var(--tlc-fg)" }}>
-                    <strong style={{ color: "var(--tlc-blue)" }}>{r.label}</strong>
-                    {" → "}
-                    <em style={{ color: "var(--tlc-fg-mid)" }}>{r.text}</em>
-                  </p>
-                ))}
-              </div>
-
-              <p className="tlc-hero__desc" style={{ fontWeight: 600, color: "var(--tlc-fg)" }}>
-                But what if you're solving the wrong problem?
-              </p>
               <p className="tlc-hero__desc">
                 Think Like a Consultant shows you how to break down complex business problems, find the root cause, and choose solutions based on clear thinking — not guesswork.
               </p>
