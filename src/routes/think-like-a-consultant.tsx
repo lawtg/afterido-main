@@ -235,153 +235,73 @@ function ThinkLikeAConsultant() {
         </div>
       </header>
 
-      {/* ── WHAT YOU'LL LEARN ── */}
-      <section className="tlc-section tlc-section--alt">
-        <div className="tlc-reading">
-          <h2 className="tlc-h2">Inside this book, you will learn how to:</h2>
-          <ul className="tlc-bullets" style={{ marginTop: "20px" }}>
-            <li>Identify the real problem instead of treating symptoms.</li>
-            <li>Break complicated business challenges into smaller, manageable parts.</li>
-            <li>Ask better questions before making important decisions.</li>
-            <li>Use practical frameworks to understand your business and its environment.</li>
-            <li>Find the real causes behind problems using evidence and analysis.</li>
-            <li>Evaluate opportunities, compare options and test ideas before committing fully.</li>
-            <li>Turn recommendations into clear action plans that actually get done.</li>
-          </ul>
-          <p className="tlc-body" style={{ marginTop: "24px", borderTop: "1px solid var(--tlc-border)", paddingTop: "20px" }}>
-            No complicated business theory for the sake of theory. Just practical tools, plain-English explanations and exercises you can apply to your own business.
-          </p>
-        </div>
-      </section>
-
       {/* ── WHAT'S INSIDE ── */}
       <section className="tlc-section">
-        <div className="tlc-shell">
-          <div style={{ maxWidth: "700px", marginBottom: "40px" }}>
-            <h2 className="tlc-h2">What's Inside Think Like a Consultant?</h2>
-            <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--tlc-fg)", margin: "8px 0 4px" }}>35 Chapters. One Repeatable Way to Think.</p>
-            <p className="tlc-body">This isn't a collection of business buzzwords.</p>
-            <p className="tlc-body">It is a practical system that takes you from identifying a problem to understanding it, developing solutions and putting those solutions into action.</p>
-          </div>
-
-          <div style={{ display: "grid", gap: "16px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}>
-
-            {/* Part 1 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 1</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Building the Consultant's Mindset</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn the foundation of structured problem-solving.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["What Consultants Get Paid For", "The One Skill That Matters More Than Any Framework", "Breaking Problems Into Clear, Non-Overlapping Parts", "How to Frame a Problem Using SCQA", "The Simple 6-Step Process for Tackling Any Problem"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 2 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 2</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Understanding Your Business</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn how to examine your business, market and competitive environment.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["SWOT Analysis", "PESTLE Analysis", "Competitive Forces", "Market Sizing", "Value Chain Analysis"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 3 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 3</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Finding the Real Problem</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Go beyond surface-level symptoms and discover what's actually driving the challenge.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["KPI Trees", "Root Cause Analysis", "The Five Whys", "The 80/20 Rule", "Cost and Time Leak Analysis", "Process Mapping", "Systems Thinking"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 4 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 4</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Developing Better Solutions</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Learn how to move from identifying a problem to making a sound strategic choice.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["Generating Multiple Solutions", "Strategic Choice Tools", "Prioritizing Competing Demands", "Risk Analysis", "Testing Ideas Before Committing Fully"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 5 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 5</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Making Better Business Decisions</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Examine the decisions that shape the future of your business.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["Business Model Analysis", "Short-Term and Long-Term Planning", "Pricing", "Scaling Your Business"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 6 */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden" }}>
-              <div style={{ background: "var(--tlc-bg-navy)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 6</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Turning Ideas Into Action</p>
-                <p style={{ margin: "6px 0 0", fontSize: "0.82rem", color: "#8A9BB0" }}>Because a good recommendation is useless if nobody implements it.</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["Leading Your Team Through Change", "Creating Action Plans", "Managing Projects", "Getting Stakeholders on Board", "Tracking Progress", "Continuous Improvement"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Part 7 — full width */}
-            <div style={{ background: "#fff", border: "1px solid var(--tlc-border)", borderRadius: "8px", overflow: "hidden", gridColumn: "1 / -1" }}>
-              <div style={{ background: "var(--tlc-bg-dark)", padding: "16px 20px" }}>
-                <p style={{ margin: "0 0 2px", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-gold)" }}>Part 7</p>
-                <p style={{ margin: 0, fontFamily: "var(--tlc-serif)", fontSize: "1.05rem", fontWeight: 700, color: "#fff", lineHeight: 1.3 }}>Putting Everything Together</p>
-              </div>
-              <ul style={{ margin: 0, padding: "16px 20px", listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["A Quick-Reference Checklist for Any New Problem", "Three Practical Problems Solved from Start to Finish", "When to Use the Full Process — and When a Shortcut Is Fine", "Common Mistakes Even Trained Consultants Make", "A Repeatable Way to Approach Whatever Comes Next"].map(item => (
-                  <li key={item} style={{ fontSize: "0.88rem", color: "var(--tlc-fg-mid)", display: "flex", gap: "8px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--tlc-blue)", fontWeight: 700, flexShrink: 0 }}>—</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-          </div>
-
-          <p className="tlc-body" style={{ marginTop: "28px", fontStyle: "italic", color: "var(--tlc-fg-mid)" }}>
-            Every chapter includes practical explanations, examples and exercises to help you apply what you're learning.
+        <div className="tlc-reading">
+          <h2 className="tlc-h2">What's Inside Think Like a Consultant?</h2>
+          <p className="tlc-body" style={{ marginTop: "12px" }}>
+            If you've ever faced a business problem and didn't know where to start, this book gives you a practical system for breaking it down, finding the real problem, choosing the right solution, and turning your thinking into action.
           </p>
+
+          <p style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--tlc-blue)", margin: "32px 0 16px" }}>
+            Table of Contents
+          </p>
+
+          <ol style={{ listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid var(--tlc-border)" }}>
+            {[
+              "What Consultants Get Paid For (It's Not What You Think)",
+              "The One Skill That Matters More Than Any Framework",
+              "Breaking Any Problem Into Pieces That Don't Overlap (MECE, in Plain English)",
+              "Telling the Story Before You Solve It — Situation, Complication, Question",
+              "A Simple 6-Step Process You Can Use on Literally Any Problem",
+              "What's Actually Going On Inside Your Business (SWOT, Simplified)",
+              "What's Happening Outside Your Business That You Can't Control (PESTLE)",
+              "Why Some Industries Are Brutal and Others Aren't (Competitive Forces, Explained)",
+              "How Big Is This Opportunity, Really? (Market Sizing Without a Research Team)",
+              "Finding Where the Real Value Gets Made — and Lost",
+              "Why \"The Problem\" Is Rarely the Real Problem (KPI Trees & Root Cause Analysis)",
+              "The 20% of Causes Behind 80% of Your Headaches",
+              "Where Your Money and Time Are Actually Leaking",
+              "Mapping How Work Really Flows (and Where It Gets Stuck)",
+              "Seeing the Whole System, Not Just the Symptom in Front of You",
+              "Generating More Than One Good Option, on Purpose",
+              "Deciding Where to Play and How to Win (Simple Strategic Choice Tools)",
+              "What to Do First When Everything Feels Urgent",
+              "Thinking Through What Could Go Wrong Before It Does",
+              "Testing an Idea Before You Bet the Business on It",
+              "Does Your Business Model Actually Make Sense?",
+              "Planning for Next Quarter Without Losing Sight of Next Year",
+              "Pricing — The Fastest Lever You're Probably Ignoring",
+              "What Breaks When You Scale (and How to See It Coming)",
+              "Leading Your Team Through Change Without Losing Them",
+              "Turning a Smart Recommendation Into Something That Gets Done",
+              "Running Projects Without Drowning in Process",
+              "Getting People on Board Who Weren't in the Room",
+              "Knowing If It's Working (Simple Ways to Track Progress)",
+              "Getting Slightly Better, Continuously, Without a Consulting Budget",
+              "A Quick-Reference Checklist for Any New Problem",
+              "Applying the System — Three Problems, Start to Finish",
+              "When to Use the Full Process — and When a Shortcut Is Fine",
+              "Common Traps Even Trained Consultants Fall Into",
+              "Your Turn — A Repeatable Way to Approach Whatever's Next",
+            ].map((chapter, i) => (
+              <li key={i} style={{
+                display: "grid",
+                gridTemplateColumns: "40px 1fr",
+                gap: "0 12px",
+                padding: "12px 0",
+                borderBottom: "1px solid var(--tlc-border)",
+                alignItems: "baseline",
+              }}>
+                <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--tlc-blue)", fontFamily: "var(--tlc-sans)" }}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span style={{ fontSize: "0.93rem", color: "var(--tlc-fg)", lineHeight: 1.55 }}>
+                  {chapter}
+                </span>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -399,35 +319,6 @@ function ThinkLikeAConsultant() {
         </div>
       </section>
 
-      {/* ── WHO IT'S FOR ── */}
-      <section className="tlc-section tlc-section--navy">
-        <div className="tlc-reading">
-          <span className="tlc-eyebrow">Who this book is for</span>
-          <h2 className="tlc-h2 tlc-h2--white">This book is for you if…</h2>
-
-          <div className="tlc-who-grid">
-            {[
-              { icon: "🏢", title: "Business Owners", text: "Who want to make better decisions instead of constantly reacting to problems." },
-              { icon: "🚀", title: "Entrepreneurs", text: "Who want to evaluate opportunities and approach challenges more strategically." },
-              { icon: "👥", title: "Managers & Team Leaders", text: "Who need practical tools for solving problems and improving performance." },
-              { icon: "💼", title: "Professionals", text: "Who want to develop stronger analytical and decision-making skills." },
-              { icon: "🧠", title: "Anyone", text: "Who wants to learn how to think through difficult business situations more clearly." },
-            ].map((w, i) => (
-              <div key={i} className="tlc-who-item">
-                <span className="tlc-who-item__icon">{w.icon}</span>
-                <div className="tlc-who-item__text">
-                  <strong>{w.title}</strong>
-                  {w.text}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p style={{ marginTop: "32px", fontStyle: "italic", color: "#8A9BB0", fontSize: "0.97rem", textAlign: "center" }}>
-            You don't have to be a consultant to benefit from the way consultants think.
-          </p>
-        </div>
-      </section>
 
       {/* ── FINAL OFFER ── */}
       <section className="tlc-offer">
