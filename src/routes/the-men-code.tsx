@@ -103,49 +103,21 @@ function TheMenCode() {
       {/* ── HERO — Black ── */}
       <header className="mc-hero">
         <div className="mc-shell">
-          <div className="mc-hero__grid">
-            <div>
-              <p className="mc-hero__eyebrow">For Nigerian men · Private &amp; Discreet</p>
-              <h1 className="mc-hero__h1">
-                How To Last Longer, Perform Better And <span>Leave Her Fully Satisfied</span>
-              </h1>
-              <p className="mc-hero__sub">
-                Without roadside mixtures, risky tablets or explaining yourself to anybody.
-              </p>
-              <p className="mc-hero__sub">
-                Discover The Men Code — the private, no-nonsense guide that shows you what nobody taught you about stamina, confidence and what a woman really wants.
-              </p>
-
-              <div className="mc-price-block">
-                <div className="mc-price-row">
-                  <span className="mc-price-row__label">Regular Price:</span>
-                  <span className="mc-price-row__crossed">&#8358;{PRICE_WAS}</span>
-                </div>
-                <div className="mc-price-row">
-                  <span className="mc-price-row__label">Launch Price:</span>
-                  <span className="mc-price-row__today">&#8358;{PRICE_NOW}</span>
-                </div>
-                <div className="mc-price-row">
-                  <span className="mc-price-row__label">Goes up to &#8358;{PRICE_WAS} on 1st November</span>
-                  <span className="mc-price-row__save">Save 50%</span>
-                </div>
-              </div>
-
-              <Cta label={"Send me The Men Code"} full />
-              <p className="mc-trust mc-trust--light" style={{ marginTop: "10px" }}>
-                Instant download &nbsp;·&nbsp; Read privately on any phone &nbsp;·&nbsp; Discreet billing
-              </p>
-            </div>
-
-            <div className="mc-hero__book">
-              <img
-                src="/men-code-cover.png"
-                alt="The Men Code book cover"
-                width="600"
-                height="840"
-                fetchPriority="high"
-              />
-            </div>
+          <p className="mc-hero__eyebrow">For Nigerian men · Private &amp; Discreet</p>
+          <h1 className="mc-hero__h1">
+            How To Last Longer, Perform Better And <span>Leave Her Fully Satisfied</span>
+          </h1>
+          <p className="mc-hero__sub">
+            Without roadside mixtures, risky tablets or explaining yourself to anybody.
+          </p>
+          <p className="mc-hero__sub--bold">
+            Discover The Men Code — the private, no-nonsense guide that shows you what nobody taught you about stamina, confidence and what a woman really wants.
+          </p>
+          <div className="mc-hero__cta">
+            <Cta label="Send me The Men Code" full />
+            <p className="mc-trust mc-trust--light" style={{ marginTop: "10px" }}>
+              Instant download &nbsp;·&nbsp; Read privately on any phone &nbsp;·&nbsp; Discreet billing
+            </p>
           </div>
         </div>
       </header>

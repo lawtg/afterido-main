@@ -25,8 +25,8 @@
   background: var(--mc-white);
   color: var(--mc-black);
   font-family: var(--mc-sans);
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,47 +47,47 @@
 /* ── HERO — Black ── */
 .mc-hero {
   background: var(--mc-black);
-  padding: 56px 0 52px;
+  padding: 72px 0 68px;
   border-bottom: 3px solid var(--mc-red);
-}
-.mc-hero__grid {
-  display: grid;
-  gap: 40px;
-  align-items: center;
+  text-align: center;
 }
 .mc-hero__eyebrow {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--mc-red);
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 .mc-hero__h1 {
   font-family: var(--mc-serif);
-  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.1;
   color: var(--mc-white);
-  margin: 0 0 20px;
+  margin: 0 auto 24px;
+  max-width: 820px;
   letter-spacing: -0.01em;
 }
 .mc-hero__h1 span { color: var(--mc-red); }
 .mc-hero__sub {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: #C0C0C0;
-  margin: 0 0 28px;
+  margin: 0 auto 16px;
   line-height: 1.7;
+  max-width: 680px;
 }
-.mc-hero__book {
+.mc-hero__sub--bold {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: #E0E0E0;
+  font-weight: 500;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+  max-width: 680px;
+}
+.mc-hero__cta {
+  max-width: 420px;
   margin: 0 auto;
-  max-width: 300px;
-}
-.mc-hero__book img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.7), 0 4px 16px rgba(204,31,31,0.3);
 }
 
 /* ── CTA BUTTON ── */
@@ -121,8 +121,8 @@
 .mc-btn--outline:hover { background: var(--mc-red); color: var(--mc-white); }
 .mc-btn--dark {
   background: var(--mc-black);
-  border-color: var(--mc-white);
-  color: var(--mc-white);
+  border-color: var(--mc-black);
+  color: var(--mc-white) !important;
 }
 .mc-btn--dark:hover { background: var(--mc-red); border-color: var(--mc-red); }
 
@@ -195,7 +195,7 @@
 /* ── HEADINGS ── */
 .mc-h2 {
   font-family: var(--mc-serif);
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
   font-weight: 700;
   line-height: 1.15;
   color: var(--mc-black);
@@ -204,17 +204,17 @@
 .mc-h2--white { color: var(--mc-white); }
 .mc-h2--red { color: var(--mc-red); }
 
-.mc-body { font-size: 0.97rem; line-height: 1.75; color: #333; margin: 0 0 1.2em; }
+.mc-body { font-size: 1.1rem; line-height: 1.85; color: #333; margin: 0 0 1.3em; }
 .mc-body--light { color: #BBB; }
 .mc-body--mid { color: #555; }
 
 /* ── LETTER STYLE ── */
 .mc-letter {
-  font-size: 1rem;
-  line-height: 1.85;
+  font-size: 1.1rem;
+  line-height: 1.9;
   color: #222;
 }
-.mc-letter p { margin: 0 0 1.3em; }
+.mc-letter p { margin: 0 0 1.5em; }
 .mc-letter strong { color: var(--mc-black); }
 
 /* ── CHAPTER LIST ── */
@@ -226,23 +226,23 @@
 }
 .mc-chapters li {
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 52px 1fr;
   gap: 0 14px;
-  padding: 14px 0;
+  padding: 16px 0;
   border-bottom: 1px solid var(--mc-border-lt);
   align-items: baseline;
 }
 .mc-chapters__num {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--mc-red);
   letter-spacing: 0.06em;
   font-family: var(--mc-sans);
 }
 .mc-chapters__text {
-  font-size: 0.93rem;
+  font-size: 1.05rem;
   color: #222;
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 /* ── GUARANTEE BOX ── */
