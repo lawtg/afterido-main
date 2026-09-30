@@ -189,14 +189,13 @@ function TheMenCode() {
         <div className="mc-reading">
           <span className="mc-eyebrow mc-author__eyebrow">Why I wrote this book</span>
           <h2 className="mc-author__h2">Why I wrote this book (and why I left my job)</h2>
-          <p className="mc-author__body">My name is Ojonugwua Lawrence. For many years, I worked at an e-commerce brand that sold herbal products to men who wanted better stamina and bedroom performance.</p>
-          <p className="mc-author__body">The products sold fast. Men rushed to buy them, because we told them there were "no side effects". But deep down, I knew that was not the full story.</p>
-          <p className="mc-author__body">I saw enough to know that men were swallowing things without understanding what was in them or what they might be doing to their bodies. That sat heavily on my conscience, and eventually I made the decision to leave the job.</p>
-          <p className="mc-author__body">I could not keep selling a promise I did not believe in.</p>
-          <p className="mc-author__body">So I started asking a different question: what is the safest, most natural way for a man to get these results? I spent years researching it, from the health side, the lifestyle side and the mind side. The answers were simpler than any roadside mixture, and most men had never been told them.</p>
-          <p className="mc-author__body" style={{ marginBottom: 0 }}>
-            Those answers are what I put into The Men Code. It is the book I wish every man I once sold to had been given first.
-          </p>
+          <p className="mc-author__body">My name is Joshua Lawrence. For some time, I worked at an e-commerce brand that sold herbal products to men who wanted better stamina and bedroom performance.</p>
+          <p className="mc-author__body">The products sold fast. Men rushed to buy them because we told them there were "no side effects." But deep down, I knew that was not the full story.</p>
+          <p className="mc-author__body">I saw enough to know that men were swallowing things without really understanding what was in them or what they might be doing to their bodies. And as the market became more saturated, more things started going wrong with the business. It became clear that something needed to change.</p>
+          <p className="mc-author__body">That experience made me start asking a different question: what is the safest, most natural way for a man to get these results?</p>
+          <p className="mc-author__body">I began researching the subject from the health side, the lifestyle side, and the mind side. What I found was simpler than many of the products being sold, yet most men had never been properly taught these things.</p>
+          <p className="mc-author__body">Those answers are what I put into The Men Code.</p>
+          <p className="mc-author__body" style={{ marginBottom: 0 }}>It is the book I wish every man I once sold to had been given first.</p>
         </div>
       </section>
 
