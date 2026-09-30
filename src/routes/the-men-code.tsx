@@ -103,7 +103,7 @@ function TheMenCode() {
       {/* ── HERO — Black ── */}
       <header className="mc-hero">
         <div className="mc-shell">
-          <p className="mc-hero__eyebrow">For Nigerian men · Private &amp; Discreet</p>
+          <p className="mc-hero__eyebrow">For Men who are tired of pretending everything is fine.</p>
           <h1 className="mc-hero__h1">
             How To Last Longer, Perform Better And <span>Leave Her Fully Satisfied</span>
           </h1>
