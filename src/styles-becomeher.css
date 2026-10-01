@@ -1,0 +1,308 @@
+/* ============================================================
+   BECOME THE WOMAN HE CAN'T AFFORD TO LOSE
+   Palette: deep burgundy / blush / black / white
+   ============================================================ */
+
+:root {
+  --bh-black:      #0D0D0D;
+  --bh-charcoal:   #1A1A1A;
+  --bh-burgundy:   #7B1D2E;
+  --bh-burgundy-d: #5A1220;
+  --bh-rose:       #C4607A;
+  --bh-blush:      #F5E6EA;
+  --bh-white:      #FFFFFF;
+  --bh-off-white:  #FAF6F7;
+  --bh-grey:       #F2ECEE;
+  --bh-mid:        #9A8A8E;
+  --bh-border:     #2A1A1E;
+  --bh-border-lt:  #E8D8DC;
+  --bh-radius:     4px;
+  --bh-serif:      'Anton', Georgia, serif;
+  --bh-sans:       'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.bh-page {
+  background: var(--bh-white);
+  color: var(--bh-black);
+  font-family: var(--bh-sans);
+  font-size: 22px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bh-page *, .bh-page *::before, .bh-page *::after { box-sizing: border-box; }
+.bh-page img { display: block; max-width: 100%; }
+.bh-page a { color: inherit; text-decoration: none; }
+
+/* ── SHELL ── */
+.bh-shell { width: min(calc(100% - 24px), 1060px); margin-inline: auto; }
+.bh-reading { width: min(calc(100% - 24px), 680px); margin-inline: auto; }
+
+/* ── HERO — Black ── */
+.bh-hero {
+  background: var(--bh-black);
+  padding: 72px 0 68px;
+  border-bottom: 3px solid var(--bh-burgundy);
+  text-align: center;
+}
+.bh-hero__eyebrow {
+  font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+  font-weight: 400;
+  font-family: var(--bh-sans);
+  color: var(--bh-rose);
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+.bh-hero__h1 {
+  font-family: var(--bh-serif);
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.08;
+  color: var(--bh-white);
+  margin: 0 auto 20px;
+  max-width: 900px;
+}
+.bh-hero__h1 span { color: var(--bh-rose); }
+.bh-hero__sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #C0B0B4;
+  margin: 0 auto 36px;
+  line-height: 1.75;
+  max-width: 700px;
+}
+.bh-hero__cta { max-width: 460px; margin: 0 auto; }
+.bh-urgency-note {
+  font-size: 0.82rem;
+  color: var(--bh-rose);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* ── CTA BUTTON ── */
+.bh-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 17px 28px;
+  background: var(--bh-burgundy);
+  color: var(--bh-white);
+  border: 2px solid var(--bh-burgundy);
+  border-radius: var(--bh-radius);
+  font-family: var(--bh-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.bh-btn:hover { background: var(--bh-burgundy-d); border-color: var(--bh-burgundy-d); }
+.bh-btn:focus-visible { outline: 3px solid var(--bh-rose); outline-offset: 3px; }
+.bh-trust {
+  margin-top: 8px;
+  font-size: 0.77rem;
+  color: #888;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ── SECTIONS ── */
+.bh-section { padding: 64px 0; }
+.bh-section--white { background: var(--bh-white); border-block: 1px solid var(--bh-border-lt); }
+.bh-section--blush { background: var(--bh-blush); border-block: 1px solid var(--bh-border-lt); }
+.bh-section--grey  { background: var(--bh-grey);  border-block: 1px solid var(--bh-border-lt); }
+.bh-section--dark  { background: var(--bh-charcoal); border-block: 1px solid var(--bh-border); }
+.bh-section--black { background: var(--bh-black); border-block: 1px solid var(--bh-border); }
+
+/* ── EYEBROW ── */
+.bh-eyebrow {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bh-burgundy);
+  margin-bottom: 12px;
+}
+.bh-eyebrow--light { color: var(--bh-rose); }
+
+/* ── HEADINGS ── */
+.bh-h2 {
+  font-family: var(--bh-serif);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  color: var(--bh-black);
+  margin: 0 0 20px;
+}
+.bh-h2--white { color: var(--bh-white); }
+.bh-h2--rose  { color: var(--bh-rose); }
+
+.bh-body { font-size: 1.1rem; line-height: 1.85; color: #333; margin: 0 0 1.3em; }
+.bh-body--light { color: #BBB; }
+
+/* ── LETTER ── */
+.bh-letter { font-size: 1.15rem; line-height: 1.9; color: #222; }
+.bh-letter p { margin: 0 0 1.5em; }
+.bh-letter strong { color: var(--bh-black); }
+
+/* ── DISCOVERY LIST ── */
+.bh-discovers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 28px;
+}
+.bh-discover {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 20px 20px 0;
+  border-left: 4px solid var(--bh-burgundy);
+  padding-left: 20px;
+}
+.bh-discover__text {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.72;
+  font-family: var(--bh-sans);
+}
+.bh-discover__text strong { color: var(--bh-black); }
+
+/* ── GUARANTEE ── */
+.bh-guarantee {
+  border: 2px solid var(--bh-burgundy);
+  border-radius: 6px;
+  padding: 32px 28px;
+  background: var(--bh-white);
+  max-width: 640px;
+  margin: 0 auto;
+}
+.bh-guarantee__title {
+  font-family: var(--bh-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--bh-burgundy);
+  margin: 0 0 14px;
+}
+.bh-guarantee__body {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ── CTA BAND ── */
+.bh-cta-band { background: var(--bh-burgundy); padding: 36px 16px; }
+.bh-cta-band__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.bh-cta-band__text { color: #fff; font-size: 1.1rem; font-weight: 700; line-height: 1.4; }
+.bh-cta-band__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--bh-black);
+  color: var(--bh-white);
+  border: 2px solid var(--bh-black);
+  border-radius: var(--bh-radius);
+  font-family: var(--bh-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: background 150ms ease;
+}
+.bh-cta-band__btn:hover { background: #222; }
+
+/* ── CLOSE ── */
+.bh-close {
+  background: var(--bh-black);
+  padding: 80px 0;
+  text-align: center;
+  border-top: 3px solid var(--bh-burgundy);
+}
+.bh-close__main {
+  font-family: var(--bh-serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--bh-white);
+  line-height: 1.12;
+  margin: 0 auto 16px;
+  max-width: 700px;
+}
+.bh-close__main span { color: var(--bh-rose); }
+.bh-close__sub { color: #888; font-size: 0.95rem; margin: 0 0 36px; font-style: italic; }
+
+/* ── DISCLAIMER ── */
+.bh-disclaimer { background: #111; padding: 20px 16px; text-align: center; }
+.bh-disclaimer p { color: #555; font-size: 0.75rem; margin: 0; line-height: 1.6; max-width: 760px; margin-inline: auto; }
+
+/* ── BOOK PLACEHOLDER ── */
+.bh-book-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(135deg, var(--bh-burgundy-d) 0%, var(--bh-burgundy) 60%, var(--bh-rose) 100%);
+  border-radius: 4px 12px 12px 4px;
+  box-shadow: -6px 0 0 #3A0A14, -14px 4px 36px rgba(13,0,5,0.5), 0 20px 52px rgba(13,0,5,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+  gap: 12px;
+}
+.bh-book-placeholder__title {
+  font-family: var(--bh-serif);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #fff;
+  line-height: 1.2;
+}
+.bh-book-placeholder__sub {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  line-height: 1.5;
+  font-family: var(--bh-sans);
+}
+
+/* ── RESPONSIVE ── */
+@media (min-width: 640px) {
+  .bh-shell { width: min(calc(100% - 48px), 1060px); }
+  .bh-reading { width: min(calc(100% - 48px), 680px); }
+  .bh-section { padding: 80px 0; }
+  .bh-cta-band__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bh-btn, .bh-cta-band__btn { transition: none; }
+}
