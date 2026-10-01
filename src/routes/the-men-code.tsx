@@ -179,18 +179,96 @@ function TheMenCode() {
       <section className="mc-section mc-section--white">
         <div className="mc-reading">
           <span className="mc-eyebrow">Inside the book</span>
-          <h2 className="mc-h2">Inside, you will discover:</h2>
+          <h2 className="mc-h2">What You Will Discover Inside The Men Code</h2>
 
-          <ul className="mc-chapters">
-            {chapters.map((c, i) => (
-              <li key={i}>
-                <span className="mc-chapters__num">{c.num}</span>
-                <span className="mc-chapters__text">{c.text}</span>
-              </li>
+          <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "32px" }}>
+            {[
+              {
+                ch: "Chapter 1",
+                title: "The Things Killing Your Performance Without You Knowing",
+                body: "Some of the things you do every day may be quietly affecting your erection, stamina and sexual performance. Discover what they are — and what to start doing differently.",
+              },
+              {
+                ch: "Chapter 2",
+                title: "The Real Reason You Lose Control",
+                body: "It may not be your age. It may not even be your body. Learn why what happens in your mind can affect what happens in the bedroom — and how to break the cycle.",
+              },
+              {
+                ch: "Chapter 3",
+                title: "The Secret To Having More Control",
+                body: "Want to last longer? Discover the simple muscles you need to train, the exercises to do, and the techniques that can help you take back control when things start getting intense.",
+              },
+              {
+                ch: "Chapter 4",
+                title: "Lasting Longer Is NOT Enough",
+                body: "You can last 30 minutes and still leave her disappointed. Discover what many men completely miss about female pleasure — and how to make the experience better for both of you.",
+              },
+              {
+                ch: "Chapter 5",
+                title: "How To Make Her Think About You Before Bedtime",
+                body: "Great intimacy doesn't start in the bedroom. Discover simple things you can say and do during the day that build attraction, anticipation and desire before you even touch her.",
+              },
+              {
+                ch: "Chapter 6",
+                title: "How To Keep Her Interested After Years Together",
+                body: "The excitement was there when you first met. So what happened? Discover how to bring back anticipation and keep your sex life from becoming another boring routine.",
+              },
+              {
+                ch: "Chapter 7",
+                title: "What To Eat When You Want Your Body To Perform",
+                body: "Your kitchen may be helping your performance — or working against it. Discover everyday Nigerian foods, drinks and habits that can support better sexual health, and the ones you should think twice about.",
+              },
+              {
+                ch: "Chapter 8",
+                title: "When You Should Stop Guessing And See A Doctor",
+                body: "Not every sexual problem should be solved with a friend's advice or something bought from the roadside. Learn the warning signs you shouldn't ignore and how to talk to a doctor about your problem without embarrassment.",
+              },
+              {
+                ch: "Chapter 9",
+                title: "The 30-Day Men's Performance Reset",
+                body: "Reading this book won't change anything. What you DO after reading it will. Follow this simple 30-day plan to turn what you've learned into better habits, better control and greater confidence.",
+              },
+            ].map((item, i) => (
+              <div key={i} style={{
+                borderLeft: "4px solid var(--mc-red)",
+                paddingLeft: "20px",
+              }}>
+                <p style={{
+                  margin: "0 0 4px",
+                  fontSize: "0.75rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.14em",
+                  textTransform: "uppercase",
+                  color: "var(--mc-red)",
+                  fontFamily: "'Poppins', Arial, sans-serif",
+                }}>
+                  {item.ch}
+                </p>
+                <p style={{
+                  margin: "0 0 10px",
+                  fontFamily: "'Anton', Georgia, serif",
+                  fontSize: "clamp(1.1rem, 2.5vw, 1.45rem)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  color: "var(--mc-black)",
+                  lineHeight: 1.25,
+                }}>
+                  {item.title}
+                </p>
+                <p style={{
+                  margin: 0,
+                  fontSize: "1.05rem",
+                  color: "#444",
+                  lineHeight: 1.78,
+                  fontFamily: "'Poppins', Arial, sans-serif",
+                }}>
+                  {item.body}
+                </p>
+              </div>
             ))}
-          </ul>
+          </div>
 
-          <div style={{ marginTop: "32px" }}>
+          <div style={{ marginTop: "40px" }}>
             <Cta label="Yes, I want The Men Code" full />
           </div>
         </div>
