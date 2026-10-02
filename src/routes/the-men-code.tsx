@@ -3,7 +3,7 @@ import { useState } from "react";
 import menCodeCss from "../styles-mencode.css?url";
 
 const checkoutUrl = "https://selar.com/3q716c677j";
-const PRICE_NOW = "5,000";
+const PRICE_NOW = "2,900";
 const PRICE_WAS = "10,000";
 
 export const Route = createFileRoute("/the-men-code")({
