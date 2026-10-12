@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BecomeHerRouteImport } from './routes/become-her'
+import { Route as SellThisCakesRouteImport } from './routes/sell-this-cakes'
+import { Route as ThankYouMenCodeRouteImport } from './routes/thank-you-men-code'
+import { Route as TheMenCodeRouteImport } from './routes/the-men-code'
+import { Route as ThinkLikeAConsultantRouteImport } from './routes/think-like-a-consultant'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BecomeHerRoute = BecomeHerRouteImport.update({
+  id: '/become-her',
+  path: '/become-her',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SellThisCakesRoute = SellThisCakesRouteImport.update({
+  id: '/sell-this-cakes',
+  path: '/sell-this-cakes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThankYouMenCodeRoute = ThankYouMenCodeRouteImport.update({
+  id: '/thank-you-men-code',
+  path: '/thank-you-men-code',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TheMenCodeRoute = TheMenCodeRouteImport.update({
+  id: '/the-men-code',
+  path: '/the-men-code',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThinkLikeAConsultantRoute = ThinkLikeAConsultantRouteImport.update({
+  id: '/think-like-a-consultant',
+  path: '/think-like-a-consultant',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/become-her': typeof BecomeHerRoute
+  '/sell-this-cakes': typeof SellThisCakesRoute
+  '/thank-you-men-code': typeof ThankYouMenCodeRoute
+  '/the-men-code': typeof TheMenCodeRoute
+  '/think-like-a-consultant': typeof ThinkLikeAConsultantRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/become-her': typeof BecomeHerRoute
+  '/sell-this-cakes': typeof SellThisCakesRoute
+  '/thank-you-men-code': typeof ThankYouMenCodeRoute
+  '/the-men-code': typeof TheMenCodeRoute
+  '/think-like-a-consultant': typeof ThinkLikeAConsultantRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/become-her': typeof BecomeHerRoute
+  '/sell-this-cakes': typeof SellThisCakesRoute
+  '/thank-you-men-code': typeof ThankYouMenCodeRoute
+  '/the-men-code': typeof TheMenCodeRoute
+  '/think-like-a-consultant': typeof ThinkLikeAConsultantRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/become-her'
+    | '/sell-this-cakes'
+    | '/thank-you-men-code'
+    | '/the-men-code'
+    | '/think-like-a-consultant'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/become-her'
+    | '/sell-this-cakes'
+    | '/thank-you-men-code'
+    | '/the-men-code'
+    | '/think-like-a-consultant'
+  id:
+    | '__root__'
+    | '/'
+    | '/become-her'
+    | '/sell-this-cakes'
+    | '/thank-you-men-code'
+    | '/the-men-code'
+    | '/think-like-a-consultant'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BecomeHerRoute: typeof BecomeHerRoute
+  SellThisCakesRoute: typeof SellThisCakesRoute
+  ThankYouMenCodeRoute: typeof ThankYouMenCodeRoute
+  TheMenCodeRoute: typeof TheMenCodeRoute
+  ThinkLikeAConsultantRoute: typeof ThinkLikeAConsultantRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/become-her': {
+      id: '/become-her'
+      path: '/become-her'
+      fullPath: '/become-her'
+      preLoaderRoute: typeof BecomeHerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sell-this-cakes': {
+      id: '/sell-this-cakes'
+      path: '/sell-this-cakes'
+      fullPath: '/sell-this-cakes'
+      preLoaderRoute: typeof SellThisCakesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thank-you-men-code': {
+      id: '/thank-you-men-code'
+      path: '/thank-you-men-code'
+      fullPath: '/thank-you-men-code'
+      preLoaderRoute: typeof ThankYouMenCodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/the-men-code': {
+      id: '/the-men-code'
+      path: '/the-men-code'
+      fullPath: '/the-men-code'
+      preLoaderRoute: typeof TheMenCodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/think-like-a-consultant': {
+      id: '/think-like-a-consultant'
+      path: '/think-like-a-consultant'
+      fullPath: '/think-like-a-consultant'
+      preLoaderRoute: typeof ThinkLikeAConsultantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BecomeHerRoute: BecomeHerRoute,
+  SellThisCakesRoute: SellThisCakesRoute,
+  ThankYouMenCodeRoute: ThankYouMenCodeRoute,
+  TheMenCodeRoute: TheMenCodeRoute,
+  ThinkLikeAConsultantRoute: ThinkLikeAConsultantRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
