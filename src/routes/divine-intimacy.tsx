@@ -106,17 +106,16 @@ function DivineIntimacy() {
           Divine Intimacy
         </p>
 
-        {/* Main headline — coloured accent words matching screenshot style */}
+        {/* Main headline — ends at "Marriage," */}
         <h1 className="di-hero__h1">
           How Christian Couples Can Learn To Have{" "}
           <span className="w-green">Truly Great Sex</span>{" "}
-          In Marriage, Without Watching{" "}
-          <span className="w-orange">Porn</span>, Without Guilt, And Without Compromising Your Faith
+          In Marriage,
         </h1>
 
-        {/* Subtitle */}
+        {/* Subtitle — the rest of the headline copy, smaller weight */}
         <p className="di-hero__sub">
-          Without Shame. Without Compromise. Just Practical Guidance That Works.
+          Without Watching <span style={{ color: "var(--di-orange)", fontWeight: 700 }}>Porn</span>, Without Guilt, And Without Compromising Your Faith
         </p>
 
         {/* CTA */}
